@@ -9,21 +9,13 @@ package tienda;
 
 
 import java.util.ArrayList;
-import java.util.Scanner;
 /**
  *
  * @author usuario
  */
 public class Compra {
-    void compra(ArrayList<Articulo> A)
+    void compra(ArrayList<Articulo> A, String id, String pvp, String cantidad)
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzca id de articulo: ");
-        int id = sc.nextInt();
-        System.out.println("Introduzca pvp de articulo: ");
-        int pvp = sc.nextInt();
-        System.out.println("Introduzca cantidad de articulo: ");
-        int cantidad = sc.nextInt();
         Articulo a = new Articulo (pvp, id, cantidad);
         A.add(a);
     }

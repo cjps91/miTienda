@@ -11,40 +11,40 @@ package tienda;
  */
 public class Articulo {
 
-    private int pvp;
-    private int id;
-    private int stock;
+    private String pvp;
+    private String id;
+    private String stock;
 
-    public Articulo(int pvp, int id, int stock) {
+    public Articulo(String pvp, String id, String stock) {
         this.pvp = pvp;
         this.id = id;
         this.stock=stock;
     }
 
-    public int getStock() {
+    public String getStock() {
         return stock;
     }
 
-    public void setStock(int stock) {
+    public void setStock(String stock) {
         this.stock = stock;
     }
 
 
-    public int getPvp() {
+    public String getPvp() {
         return pvp;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
 
 
-    public void setPvp(int pvp) {
+    public void setPvp(String pvp) {
         this.pvp = pvp;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
     
